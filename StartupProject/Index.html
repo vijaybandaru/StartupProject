@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Startup Project</title>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles.css" rel="stylesheet" />
+    <script src="Modules/HomeModule.js"></script>
+    <script src="Services/StudentService.js"></script>
+    <script src="Services/CommonService.js"></script>
+    <script src="AngularScripts/MainViewController.js"></script>
+    <script src="Modules/Config.js"></script>
+    <script src="AngularScripts/StudentsController.js"></script>
+    <script src="AngularScripts/CoursesController.js"></script>
+    <script src="AngularScripts/ToDoListController.js"></script>
+    <script src="AngularScripts/FacebookController.js"></script>
+</head>
+<body ng-app="myModule">
+    <table style="font-family: Arial; width:100%">
+        <tr>
+            <td colspan="2" class="header">
+                <h1>
+                    WebSite Header
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="leftMenu">
+                <a class="link" ui-sref="home" ui-sref-active="activeState">Home</a>
+                <a class="link" ui-sref="courses" ui-sref-active="activeState">Courses</a>
+                <a class="link" ui-sref="students" ui-sref-active="activeState">Students</a>
+                <a class="link" ui-sref="ToDoList" ui-sref-active="activeState">To Do List</a>
+                <a class="link" ui-sref="Facebook" ui-sref-active="activeState">Facebook</a>
+                <a class="link" ui-sref="Google" ui-sref-active="activeState">Google</a>
+            </td>
+            <td class="mainContent">
+                <!--<ng-view></ng-view>-->
+                <ui-view></ui-view>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <b>Website Footer</b>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
