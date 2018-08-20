@@ -11,14 +11,14 @@
 }
 
 .leftMenu {
-    height: 650px;
+    height: 580px;
     background-color: #D8D8D8;
     width: 75px;
     vertical-align: top;
 }
 
 .mainContent {
-    height: 650px;
+    height: 580px;
     background-color: #E6E6E6;
     width: 650px;
     vertical-align: top;
@@ -140,3 +140,4 @@ a{
   .addBtn:hover {
     background-color:green;
   }
+ 
