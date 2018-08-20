@@ -43,4 +43,9 @@ myApp.config(function ($stateProvider, $urlMatcherFactoryProvider, $urlRouterPro
         controller: "GoogleController",
         // controllerAs: "cousesCtrl"
     })
+    .state("Bootstrap", {
+        url:"/Bootstrap",
+        templateUrl:"/Templates/Bootstrap.html",
+        controller:"BootstrapController",
+    })
 })

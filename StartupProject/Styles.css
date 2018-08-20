@@ -30,7 +30,7 @@ a{
 }
 
 .activeState{
-    background-color:cyan;
+    background-color:#FF0000;
     color:white;
 }
 
@@ -75,7 +75,7 @@ a{
   
   /* Darker background-color on hover */
   ul li:hover {
-    background: #ddd;
+    background: #c21e56;
   }
   
   /* When clicked on, add a background color and strike out text */

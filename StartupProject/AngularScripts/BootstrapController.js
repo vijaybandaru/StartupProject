@@ -1,12 +1,12 @@
-﻿'use strict';
+'use strict';
 
-myApp.directive('startUpProjectStudents', function () {
+myApp.directive("startUpProjectBootStrap", function(){
     return ({
         restrict: 'AE',
         transclude: true,
         replace: true,
-        templateUrl: "Templates/Students.html",
-        controller: "StudentsController",//controller to bind
+        templateUrl: "Templates/Bootstrap.html",
+        controller: "BootstrapController",//controller to bind
         // controllerAs:"abc", //Alias name for Scope --- no scope sharing for directive & controller
         bindToController: true,  //Common Scope Sharing
         scope: {
@@ -15,7 +15,7 @@ myApp.directive('startUpProjectStudents', function () {
             parent and isolated scope. */
             //isolatedAttributeFoo:'@attributeFoo',
             //emrPatientChartOptions: '=options',//this is readed from the controller
-            // isolatedExpressionFoo:'&'    
+            // isolatedExpressionFoo:'&'
         },
 
         link: {
@@ -39,31 +39,14 @@ myApp.directive('startUpProjectStudents', function () {
             }
         },
     })
-}).controller('StudentsController', ['$scope', 'StudentService', function ($scope, StudentService) {
+}).controller("BootstrapController", ["$scope", function($scope){
 
-    $scope.mainViewPageInit = function () {
-        //$scope.students = ["Vijay", "Ravi", "Yaswanth", "Rk"];
-        $scope.StudentsGetStudentsList();
-    }
-
-    $scope.StudentsGetStudentsList = function () {
-
-        var datatoservice = {
-
-        }
-
-        StudentService.StudentServiceGetStudetsList(datatoservice).then(function (response) {
-            $scope.students = response;
-        })
-
-        // StudentService.StudentServiceGetStudetsListfromAPI(datatoservice).then(function (response) {
-        //     $scope.students = response;
-        // })
-
+    $scope.BootstrapMainViewPageInit = function(){
 
     }
 
 
-    $scope.mainViewPageInit();
+
+    $scope.BootstrapMainViewPageInit();
 
 }]);

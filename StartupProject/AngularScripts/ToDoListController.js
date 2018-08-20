@@ -43,6 +43,24 @@ myApp.directive('startUpProjectToDoList', function () {
 
     $scope.mainViewPageInit = function () {
         
+        var MyNodesList = document.getElementsByTagName("li");
+
+        // MyNodesList.forEach(function(element){
+            
+        // });
+
+        //  MyNodesList.forEach(element => {
+            
+        //  });
+
+        for(var index = 0; index < MyNodesList.length; index++){
+            var span = document.createElement("span");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            MyNodesList[index].appendChild(span);
+        }
+
     }
 
     $scope.newElement = function () {
