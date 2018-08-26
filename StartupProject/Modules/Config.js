@@ -45,7 +45,12 @@ myApp.config(function ($stateProvider, $urlMatcherFactoryProvider, $urlRouterPro
     })
     .state("Bootstrap", {
         url:"/Bootstrap",
-        templateUrl:"./Templates/Bootstrap.html",
-        controller:"BootstrapController",
+        templateUrl:"./Templates/BootstrapGallery.html",
+        controller:"BootstrapGalleryController",
+    })
+    .state("BootstrapPractice", {
+        url:"/BootstrapPractice",
+        templateUrl:"/Templates/BootstrapPractice.html",
+        controller:"BootStrapPracticeController",
     })
 })

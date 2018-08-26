@@ -6,7 +6,7 @@ myApp.directive("startUpProjectBootStrap", function(){
         transclude: true,
         replace: true,
         templateUrl: "Templates/Bootstrap.html",
-        controller: "BootstrapController",//controller to bind
+        controller: "BootstrapGalleryController",//controller to bind
         // controllerAs:"abc", //Alias name for Scope --- no scope sharing for directive & controller
         bindToController: true,  //Common Scope Sharing
         scope: {
@@ -39,12 +39,11 @@ myApp.directive("startUpProjectBootStrap", function(){
             }
         },
     })
-}).controller("BootstrapController", ["$scope", function($scope){
+}).controller("BootstrapGalleryController", ["$scope", function($scope){
 
     $scope.BootstrapMainViewPageInit = function(){
 
     }
-
 
 
     $scope.BootstrapMainViewPageInit();
